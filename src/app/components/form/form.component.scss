@@ -1,0 +1,33 @@
+/* dashboard.component.scss */
+
+
+ 
+ 
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+.div-0,.div-1, .div-2, .div-3{
+margin-top: 2em;
+display: flex;
+
+label{margin-left:1em;
+margin-right: 1em;
+font-weight: bold;}
+  }
+
+  input{
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 0.5em;
+  }
+  textarea{
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 0.5em;
+  }
+  select{
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 0.5em;
+  }

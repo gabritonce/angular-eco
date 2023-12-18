@@ -1,0 +1,61 @@
+<form [formGroup]="form">
+    <div class="div-0">
+      <div class="input-div">
+        <label for="machineName">Nome Macchina</label>
+        <input type="text" id="machineName" formControlName="machineName">
+      </div>
+      <div class="input-div">
+        <label for="tipologiaMacchina">Tipologia Macchina</label>
+        <select formControlName="tipologiaMacchina">
+  <option>
+
+  </option>
+</select>
+      </div>
+      <div class="input-div">
+        <label for="puntiLubrificazione">Punti Lubrificazione</label>
+        <input type="number" id="puntiLubrificazione" formControlName="puntiLubrificazione">
+      </div>
+    
+  
+    <!-- Campo per caricare la foto della macchina -->
+    <div class="input-div">
+      <label for="fotoMacchina">Foto Macchina</label>
+      <input type="file" id="fotoMacchina" (change)="handleFileInput($event)">
+    </div>
+  </div>
+    <div class="div-1">
+        <div class="input-div">
+    <label formControlName="nMacchineTipo" for="nMacchineTipo">N Macchine Tipo</label>
+    <input input type="file" (change)="handleFileInput($event)" type="number" id="nMacchineTipo" formControlName="nMacchineTipo">
+  </div>
+  <div class="input-div">
+    <label for="nOreAnno">N Ore Anno</label>
+    <input type="number" id="nOreAnno" formControlName="nOreAnno">
+  </div>
+  <div class="input-div">
+    <label for="datiTecniciPubblicati">Dati Tecnici Pubblicati</label>
+    <textarea id="datiTecniciPubblicati" formControlName="datiTecniciPubblicati"></textarea>
+  </div>
+</div>
+  <div class="div-2">
+    <div class="input-div">
+    <label for="contestualizzazione">Contestualizzazione</label>
+    <textarea id="contestualizzazione" formControlName="contestualizzazione"></textarea>
+  </div>
+  <div class="input-div">
+    <label for="CIGCUP">CIG/CUP</label>
+    <input type="text" id="CIGCUP" formControlName="CIGCUP">
+  </div>
+  <div class="input-div">
+    <label for="richiestoCAM">Richiesto CAM</label>
+    <select id="richiestoCAM" formControlName="richiestoCAM">
+      <option></option>
+    </select>
+</div>
+  </div>
+  
+    <button type="submit">Invia</button>
+    <button type="button">Carica Dati Salvati</button>
+  </form>
+  
